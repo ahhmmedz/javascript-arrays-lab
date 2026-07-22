@@ -50,3 +50,40 @@ console.log('Exercise 9 result:', allFoods)
 
 const hasSoup = foods.includes('soup')
 console.log('Exercise 10 result:', hasSoup)
+
+// Exercise 11: 
+
+const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+const odds = []
+
+for (const num of nums) {
+    if (num % 2 !== 0) {
+        odds.push(num);
+    }
+}
+
+console.log('Exercise 11 result:', odds);
+
+// Exercise 12:
+
+const fizz = []
+const buzz = []
+const fizzbuzz = []
+
+for (const number of nums) {
+    if (number % 3 === 0 && number  % 5 === 0 ) {
+        fizzbuzz.push(number);
+    }
+    else if (number % 3 === 0) {
+        fizz.push(number);
+    }
+     else if (number % 5 === 0) {
+        buzz.push(number);
+    }
+
+}
+
+console.log('Exercise 12 Results:')
+    console.log('fizz:', fizz)
+    console.log('buzz:', buzz)
+    console.log('fizzbuzz:', fizzbuzz)
